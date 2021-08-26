@@ -9,6 +9,9 @@ import Home from '../components/Home'
 import About from '../components/About'
 import Services from '../components/Services'
 import Portfolio from '../components/Portfolio'
+import Contact from '../components/Contact'
+import Blog from '../components/Blog'
+import BlogDetail from '../components/BlogDetail'
 
 function Header() {
     return (
@@ -54,16 +57,9 @@ function Header() {
                                                 </li>
                                                 <li><Link to="/services">Services</Link></li>
                                                 <li><Link to="/portfolio">Portfolio</Link></li>
-                                                <li>
-                                                    <a href="#">Page</a>
-                                                    <ul className="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="portfolio_details.html">Portfolio Details</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><Link to="/blog">Blog</Link></li>
+                                                
+                                                <li><Link to="/contact">Contact</Link></li>
                                             </ul>
                                         </nav>
                                         </div>
@@ -89,6 +85,9 @@ function Header() {
                     <Route exact path="/about" component={About}/>
                     <Route exact path="/services" component={Services}/>
                     <Route exact path="/portfolio" component={Portfolio}/>
+                    <Route exact path="/contact" component={Contact}/>
+                    <Route exact path="/blog" component={Blog}/>
+                    <Route exact path="/blog-detail" component={BlogDetail}/>
 
                     
 
