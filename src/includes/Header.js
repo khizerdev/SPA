@@ -8,6 +8,7 @@ import {
 import Home from '../components/Home'
 import About from '../components/About'
 import Services from '../components/Services'
+import Portfolio from '../components/Portfolio'
 
 function Header() {
     return (
@@ -52,7 +53,7 @@ function Header() {
                                                 <Link to="/about">About</Link>
                                                 </li>
                                                 <li><Link to="/services">Services</Link></li>
-                                                <li><a href="portfolio.html">Portfolio</a></li>
+                                                <li><Link to="/portfolio">Portfolio</Link></li>
                                                 <li>
                                                     <a href="#">Page</a>
                                                     <ul className="submenu">
@@ -87,6 +88,7 @@ function Header() {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/about" component={About}/>
                     <Route exact path="/services" component={Services}/>
+                    <Route exact path="/portfolio" component={Portfolio}/>
 
                     
 

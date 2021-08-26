@@ -1,4 +1,10 @@
 import React from 'react'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 function Services() {
     return (
@@ -14,8 +20,8 @@ function Services() {
                             <h2>My Services</h2>
                             <nav aria-label="breadcrumb ">
                                 <ol className="breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li className="breadcrumb-item"><a href="#">My Services</a></li> 
+                                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                                <li className="breadcrumb-item"><Link to="/services">My Services</Link></li> 
                                 </ol>
                             </nav>
                             </div>
@@ -115,29 +121,7 @@ function Services() {
                     </div>
                 </section>
                 {/* Want To Work End */}
-                {/* Brand Area Start */}
-                <div className="brand-area section-padding30">
-                    <div className="container">
-                    <div className="brand-active brand-border pt-50 pb-40">
-                        <div className="single-brand">
-                        <img src="assets/img/gallery/brand1.png" alt="" />
-                        </div>
-                        <div className="single-brand">
-                        <img src="assets/img/gallery/brand2.png" alt="" />
-                        </div>
-                        <div className="single-brand">
-                        <img src="assets/img/gallery/brand3.png" alt="" />
-                        </div>
-                        <div className="single-brand">
-                        <img src="assets/img/gallery/brand4.png" alt="" />
-                        </div>
-                        <div className="single-brand">
-                        <img src="assets/img/gallery/brand2.png" alt="" />
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                {/* Brand Area End */}
+                
                 {/* Contact Info Start */}
                 <div className="contact-info-area w-padding2" data-background="assets/img/gallery/section_bg04.jpg">
                     <div className="container">
